@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+docker run -d \
+    --name=avahi \
+    --restart always \
+    --net=host \
+    -v ./services:/etc/avahi/services \
+    -e TZ=America/Chicago \
+    ydkn/avahi:latest

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+  <name>Storage on Media2</name>
+  <service>
+    <type>_nfs._tcp</type>
+    <port>2049</port>
+    <txt-record>path=/home/glandix/storage/</txt-record>
+  </service>
+  <service>
+    <type>_device-info._tcp</type>
+    <port>0</port>
+    <txt-record>model=Macmini9</txt-record>
+  </service>
+</service-group>
